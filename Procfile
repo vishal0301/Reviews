@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn reviews.wsgi
+web: gunicorn reviews.wsgi
