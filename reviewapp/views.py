@@ -46,3 +46,42 @@ def home3(request):
 
 def write_review(request):
     return render(request, 'reviewapp/write-review.html')
+
+def icon_pack_1(request):
+    return render(request, 'reviewapp/icon-pack-1.html')
+
+def icon_pack_2(request):
+    return render(request, 'reviewapp/icon-pack-2.html')
+
+def icon_pack_3(request):
+    return render(request, 'reviewapp/icon-pack-3.html')
+
+def icon_pack_4(request):
+    return render(request, 'reviewapp/icon-pack-4.html')
+
+def reviews_page(request):
+    return render(request, 'reviewapp/reviews-page.html')
+
+def confirm(request):
+    return render(request, 'reviewapp/confirm.html')
+
+def dashboard(request):
+    return render(request, 'reviewapp/user-dashboard.html')
+
+def user_settings(request):
+    return render(request, 'reviewapp/user-settings.html')
+
+def row_listings_filterscol(request):
+    return render(request, 'reviewapp/row-listings-filterscol.html')
+
+def grid_listings_filterscol(request):
+    return render(request, 'reviewapp/grid-listings-filterscol.html')
+
+def grid_listings_filterstop(request):
+    return render(request, 'reviewapp/grid-listings-filterstop.html')
+
+def pricing(request):
+    return render(request, 'reviewapp/pricing.html')
+
+
+

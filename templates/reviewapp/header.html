@@ -56,11 +56,11 @@
 		<!-- /btn_mobile -->
 		<nav id="menu" class="main-menu">
 			<ul>
-				<li><span><a href="#0">Home</a></span>
+				<li><span><a href="{% url 'home' %}">Home</a></span>
 					<ul>
-						<li><a href="{% url 'home' %}">Home</a></li>
+						<!-- <li><a href="{% url 'home' %}">Home</a></li>
 						<li><a href="{% url 'home2' %}">Home version 2</a></li>
-						<li><a href="{% url 'home3' %}">Home version 3 (GDPR)</a></li>
+						<li><a href="{% url 'home3' %}">Home version 3 (GDPR)</a></li> -->
 					</ul>
 				</li>
 				<li><span><a href="#0">Reviews</a></span>
@@ -68,19 +68,19 @@
 						<li>
 							<span><a href="#0">Layouts</a></span>
 							<ul>
-								<li><a href="grid-listings-filterstop.html">Grid listings 1</a></li>
-								<li><a href="grid-listings-filterscol.html">Grid listings 2</a></li>
-								<li><a href="row-listings-filterscol.html">Row listings</a></li>
+								<li><a href="{% url 'grid-listings-filterstop' %}">Grid listings 1</a></li>
+								<li><a href="{% url 'grid-listings-filterscol' %}">Grid listings 2</a></li>
+								<li><a href="{% url 'row-listings-filterscol' %}">Row listings</a></li>
 							</ul>
 						</li>
-						<li><a href="reviews-page.html">Reviews page</a></li>
-						<li><a href="write-review.html">Write a review</a></li>
-						<li><a href="confirm.html">Confirm page</a></li>
-						<li><a href="user-dashboard.html">User Dashboard</a></li>
-						<li><a href="user-settings.html">User Settings</a></li>
+						<li><a href="{% url 'review-page' %}">Reviews page</a></li>
+						<li><a href="{% url 'write-review' %}">Write a review</a></li>
+						<li><a href="{% url 'confirm' %}">Confirm page</a></li>
+						<li><a href="{% url 'dashboard' %}">User Dashboard</a></li>
+						<li><a href="{% url 'user-settings' %}">User Settings</a></li>
 					</ul>
 				</li>
-				<li><span><a href="pricing.html">Pricing</a></span></li>
+				<li><span><a href="{% url 'pricing' %}">Pricing</a></span></li>
 				<li><span><a href="#0">Pages</a></span>
 					<ul>
 						<li><a href="{% url 'companies' %}">Compannies Landing Page</a></li>
@@ -96,16 +96,15 @@
 						<li>
 							<span><a href="#0">Icon Packs</a></span>
 							<ul>
-								<li><a href="icon-pack-1.html">Icon pack 1</a></li>
-								<li><a href="icon-pack-2.html">Icon pack 2</a></li>
-								<li><a href="icon-pack-3.html">Icon pack 3</a></li>
-								<li><a href="icon-pack-4.html">Icon pack 4</a></li>
+								<li><a href="{% url 'icon-pack-1' %}">Icon pack 1</a></li>
+								<li><a href="{% url 'icon-pack-2' %}">Icon pack 2</a></li>
+								<li><a href="{% url 'icon-pack-3' %}">Icon pack 3</a></li>
+								<li><a href="{% url 'icon-pack-4' %}">Icon pack 4</a></li>
 							</ul>
 						</li>
 						<li><a href="{% url '404' %}">404 page</a></li>
 					</ul>
 				</li>
-				<li><span><a href="#0">Hi</a></span></li>
 				<li class="d-block d-sm-none"><span><a href="#0" class="btn_top">Write a review</a></span></li>
 			</ul>
 		</nav>

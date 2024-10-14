@@ -1,3 +1,5 @@
+{% extends 'reviewapp/index.html' %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +29,7 @@
     <link href="css/custom.css" rel="stylesheet">
 	
 </head>
-
+{% block content %}
 <body id="register_bg">
 	
 	<nav id="menu" class="fake_menu"></nav>
@@ -35,7 +37,7 @@
 	<div id="login">
 		<aside>
 			<figure>
-				<a href="index.html"><img src="img/logo_sticky.svg" width="140" height="35" alt="" class="logo_sticky"></a>
+				<a href="{% url 'home' %}"><img src="{% static 'img/logo_sticky.svg' %}" width="140" height="35" alt="" class="logo_sticky"></a>
 			</figure>
 			<div class="access_social">
 					<a href="#0" class="social_bt facebook">Register with Facebook</a>
@@ -65,7 +67,7 @@
 				</div>
 				<div id="pass-info" class="clearfix"></div>
 				<a href="#0" class="btn_1 rounded full-width">Register Now!</a>
-				<div class="text-center add_top_10">Already have an acccount? <strong><a href="login.html">Sign In</a></strong></div>
+				<div class="text-center add_top_10">Already have an acccount? <strong><a href="{% url 'login' %}">Sign In</a></strong></div>
 			</form>
 			<div class="copy">© 2023 Vanno</div>
 		</aside>
@@ -79,6 +81,6 @@
 	
 	<!-- SPECIFIC SCRIPTS -->
 	<script src="js/pw_strenght.js"></script>	
-  
+  {% endblock %}
 </body>
 </html>
