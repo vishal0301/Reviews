@@ -9,6 +9,7 @@ django-cors-headers==4.4.0
 django-cors-middleware==1.5.0
 django-crispy-forms==1.7.2
 django-heroku==0.3.1
+django-routify==0.3.3
 django-storages==1.7.1
 docutils==0.14
 gunicorn==19.9.0
