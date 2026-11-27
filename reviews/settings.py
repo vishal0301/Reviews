@@ -79,11 +79,11 @@ MIDDLEWARE = [
 
 STORAGES = {
     "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},
-    "staticfiles": {"BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage"},
+    "staticfiles": {"BACKEND": "whitenoise.storage.CompressedStaticFilesStorage"},
 }
-# Legacy HTML templates reference a few optional theme assets; missing entries
-# should not crash the entire page while those assets are being reconciled.
-WHITENOISE_MANIFEST_STRICT = False
+# The legacy theme contains vendor source-map comments for files not shipped
+# in the repository. Compression without manifest rewriting avoids build-time
+# failures while preserving normal static-file serving.
 
 ROOT_URLCONF = "reviews.urls"
 
