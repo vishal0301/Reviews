@@ -12,14 +12,13 @@ The project uses Django 6.1, WhiteNoise for static assets, Gunicorn for WSGI ser
 
 ## Run locally with Docker
 
-1. Copy `.env.example` to `.env` if you want to override the local defaults.
-2. Start the app:
+Start the app:
 
-   ```bash
-   docker compose up --build
-   ```
+```bash
+docker compose up --build
+```
 
-3. Open http://127.0.0.1:8000/
+Open http://127.0.0.1:8000/
 
 The Compose configuration uses a development-only secret and enables DEBUG for local use. Do not reuse those defaults in production.
 
