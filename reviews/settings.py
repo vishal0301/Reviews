@@ -81,6 +81,9 @@ STORAGES = {
     "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},
     "staticfiles": {"BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage"},
 }
+# Legacy HTML templates reference a few optional theme assets; missing entries
+# should not crash the entire page while those assets are being reconciled.
+WHITENOISE_MANIFEST_STRICT = False
 
 ROOT_URLCONF = "reviews.urls"
 
